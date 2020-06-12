@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+body {
+	font-family: 'PT Sans', sans-serif;
+}
+
+h1 {
+	font-family: "Poppins", serif;
+	text-transform: uppercase;
+	line-height: 1.12
+}
+
+#page {
+	padding: 48px;
+	min-height: calc(100vh - 160px); /* Footer height */
+}
+
+#container {
+	max-width: 960px;
+	margin: 0 auto;
+	position: relative;
+	font-size: 0;
+}
+
+#container > * {
+	font-size: 16px;
+	vertical-align: top;
+}
+
+/* BASIC LAYOUT */
+
+/* Side section */
+aside#info {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+	aside#info {
+		width: 280px;
+	}
+}
+
+/* Main section */
+section#main {
+	display: inline-block;
+	width: 100%;
+	padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+	section#main {
+		width: calc(100% - 280px);
+		padding: 0 0 0 24px;
+	}
+}
+
+/* SIDE SECTION SPECIFICS */
+
+aside#info > * {
+	margin-bottom: 8px;
+	color: #333;
+	padding: 16px 0;
+}
+
+aside#info h1 {
+	font-size: 36px;
+}
+
+aside#info #name span {
+	margin-top: 16px;
+	display: inline-block;
+	font-size: 16px;
+	color: #777;
+}
+
+aside#info h2 {
+	margin-bottom: 16px;
+}
+
+nav a, nav a:hover, nav a:visited {
+	padding: 8px 0;
+	color: #333;
+	display: block;
+}
+
+nav a.active, nav a:hover {
+	color: #5179FC;;
+}
+
+#contact {
+	display: inline-block;
+	width: 160px;
+	border-top: 1px solid #eee;
+}
+
+#social a img {
+	margin: 16px 8px 0 0;
+	height: 24px;
+	opacity: .8;
+}
+
+/* MAIN SECTION SPECIFICS */
+.grid-item {
+	padding: 0 0 16px 0;
+	width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+	.grid-item {
+		cursor: pointer;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.grid-item {
+		padding: 0 8px 16px 8px;
+		width: 50%;
+	}
+}
+
+footer {
+	color: #777;
+	padding: 48px;
+	background: #eee;
+	margin-top: 48px;
+	height: 112px;
+}
+
+/* MAIN PAGE PREVIEW AREA */
+
+#main.previews {
+	font-size: 0;
+}
+
+#main.previews a {
+	display: inline-block;
+	width: 32%;
+	margin-right: 2%;
+	position: relative;
+	padding: 0;
+	border-radius: 8px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+#main.previews a:nth-child(3n) {
+	margin-right: 0;
+}
+
+#main.previews a::after {
+	content: attr(label);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.87);
+	z-index: 1;
+	left: 0;
+	top: 0;
+	padding-top: 25%;
+	text-align: center;
+	color: black;
+	font-family: "Poppins", sans-serif;
+	transition: all .23s ease-out;
+	opacity: 0;
+}
+
+#main.previews a:hover::after {
+	opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+	#main.previews a {
+		font-size: 14px;
+	}
+}
