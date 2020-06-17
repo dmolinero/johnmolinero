@@ -1,17 +1,6 @@
-function docReady(fn) {
-    // see if DOM is already available
-    if (document.readyState === "complete" || document.readyState === "interactive") {
-        // call on next available tick
-        setTimeout(fn, 1);
-    } else {
-        document.addEventListener("DOMContentLoaded", fn);
-    }
-}
-
-docReady(function() {
-
-	// Setup Masonry
-    var el = document.querySelector('.grid');
+document.addEventListener("DOMContentLoaded", function(event) { 
+  	// Setup Masonry
+  	var el = document.querySelector('.grid');
     if (el) {
     	var msnry = new Masonry(el, {
 	  		itemSelector: '.grid-item',
@@ -23,6 +12,14 @@ docReady(function() {
 	// Setup lightbox
 	var lb = new Lightbox();
 	lb.setup();
+
+	// Show site
+	var grid = document.querySelector('.grid');
+	var loader = document.querySelector('.loader');
+
+	grid.classList.remove('hide');
+	loader.classList.add('hide');
+    
 });
 
 /*
