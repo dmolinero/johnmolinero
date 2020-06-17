@@ -228,4 +228,6 @@ footer {
 /* UTILITY */
 .hide {
 	opacity: 0;
+	min-height: 100vh;
+	overflow: hidden;
 }
