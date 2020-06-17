@@ -1,25 +1,56 @@
-document.addEventListener("DOMContentLoaded", function(event) { 
-  	// Setup Masonry
-  	var el = document.querySelector('.grid');
-    if (el) {
-    	var msnry = new Masonry(el, {
-	  		itemSelector: '.grid-item',
-	  		percentPosition: true,
-	  		transitionDuration: 0
-		});
+function whenImagesHaveLoaded(el, callback) {
+    const images = el.getElementsByTagName('img');
+    const len = images.length;
+
+    if (!len) {
+        callback();
     }
-	
-	// Setup lightbox
-	var lb = new Lightbox();
-	lb.setup();
 
-	// Show site
+    let counter = 0;
+
+    Array.prototype.forEach.call(images, function(img) {
+        img.addEventListener('load', incrementCounter, false);
+        img.addEventListener('error', incrementCounter, false);
+    });
+
+    function incrementCounter() {
+        counter++;
+        if (counter === len) {
+            callback();
+            Array.prototype.forEach.call(images, function(img) {
+                img.removeEventListener('load', incrementCounter, false);
+                img.removeEventListener('error', incrementCounter, false);
+            });
+        }
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function(event) {
+
 	var grid = document.querySelector('.grid');
-	var loader = document.querySelector('.loader');
 
-	grid.classList.remove('hide');
-	loader.classList.add('hide');
-    
+	whenImagesHaveLoaded(grid, function() {
+	  	// Setup Masonry
+	  	var el = document.querySelector('.grid');
+	    if (el) {
+	    	var msnry = new Masonry(el, {
+		  		itemSelector: '.grid-item',
+		  		percentPosition: true,
+		  		transitionDuration: 0
+			});
+	    }
+		
+		// Setup lightbox
+		var lb = new Lightbox();
+		lb.setup();
+
+		// Show site
+		var grid = document.querySelector('.grid');
+		var loader = document.querySelector('.loader');
+
+		grid.classList.remove('hide');
+		loader.classList.add('hide');
+	});
 });
 
 /*
