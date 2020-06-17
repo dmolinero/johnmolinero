@@ -1,3 +1,4 @@
+
 function whenImagesHaveLoaded(el, callback) {
     const images = el.getElementsByTagName('img');
     const len = images.length;
@@ -9,8 +10,12 @@ function whenImagesHaveLoaded(el, callback) {
     let counter = 0;
 
     Array.prototype.forEach.call(images, function(img) {
-        img.addEventListener('load', incrementCounter, false);
-        img.addEventListener('error', incrementCounter, false);
+    	if (img.complete) {
+    		incrementCounter();
+    	} else {
+    		img.addEventListener('load', incrementCounter, false);
+        	img.addEventListener('error', incrementCounter, false);
+    	}
     });
 
     function incrementCounter() {
