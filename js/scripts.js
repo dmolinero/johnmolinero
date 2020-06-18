@@ -32,6 +32,12 @@ function whenImagesHaveLoaded(el, callback) {
 
 document.addEventListener("DOMContentLoaded", function(event) {
 
+	var hiddenEls = document.querySelectorAll('.hide-before-load');
+
+	Array.prototype.forEach.call(hiddenEls, function(el) {
+		el.classList.remove('hide-before-load');
+	});
+
 	var grid = document.querySelector('.grid');
 
 	whenImagesHaveLoaded(grid, function() {
@@ -40,6 +46,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	    if (el) {
 	    	var msnry = new Masonry(el, {
 		  		itemSelector: '.grid-item',
+		  		columnWidth: '.item-sizer',
 		  		percentPosition: true,
 		  		transitionDuration: 0
 			});
