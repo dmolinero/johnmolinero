@@ -3,12 +3,12 @@ class Footer {
     social = [
         {
             'url': 'https://www.linkedin.com/in/john-molinero-abaa07119',
-            'img': 'img/social-media/ln.png',
+            'img': '/img/social-media/ln.png',
             'alt': 'LinkedIn',
         },
         {
             'url': 'https://www.artstation.com/johnmolinero',
-            'img': 'img/social-media/as.png',
+            'img': '/img/social-media/as.png',
             'alt': 'ArtStation',
         },
     ];
