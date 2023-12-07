@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>John Molinero</title>
+    <meta name="description" content="John Molinero's Portfolio">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="/js/nav.js"></script>
+    <script src="/js/footer.js"></script>
+    <script src="/js/art-view.js"></script>
+</head>
+
+<body>
+<div id="page">
+    <div id="container">
+        <aside id="info">
+            <div id="name">
+                <a href="/"><h1>John Molinero</h1></a>
+            </div>
+            <nav id="pages">
+            </nav>
+        </aside>
+        <section id="art-view">
+        </section>
+    </div>
+</div>
+<footer id="footer">
+</footer>
+<script>
+    new Nav(document.getElementById('pages'));
+    new Footer(document.getElementById('footer'));
+    new ArtView(document.getElementById('art-view'));
+</script>
+</body>
+</html>
