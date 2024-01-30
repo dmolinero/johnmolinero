@@ -10,27 +10,27 @@ class ArtView {
             description: 'No AI used for any portion.'
         },
         'john-molinero-half-spirit.jpg': {
-            title: 'Burning City',
+            title: 'Half Spirit',
             description: 'No AI used for any portion.'
         },
         'john-molinero-necrodragon_full.jpg': {
-            title: 'Burning City',
+            title: 'Necrodragon',
             description: 'No AI used for any portion.'
         },
         'john-molinero-ranger.jpg': {
-            title: 'Burning City',
+            title: 'Ranger',
             description: 'No AI used for any portion.'
         },
         'john-molinero-shambler-wight.jpg': {
-            title: 'Burning City',
+            title: 'Shambler Wight',
             description: 'No AI used for any portion.'
         },
         'john-molinero-the-lost-tomb-of-the-wights.jpg': {
-            title: 'Burning City',
+            title: 'Lost Tomb of the Wights',
             description: 'No AI used for any portion.'
         },
         'john-molinero-torchlight-full.jpg': {
-            title: 'Burning City',
+            title: 'Torchlight',
             description: 'No AI used for any portion.'
         },
     };
