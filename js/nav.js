@@ -2,10 +2,6 @@ class Nav {
 
     items = [
         {
-            'url': '/illustration',
-            'title': 'Illustration',
-        },
-        {
             'url': '/about',
             'title': 'About',
         },
