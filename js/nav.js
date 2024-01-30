@@ -2,16 +2,16 @@ class Nav {
 
     items = [
         {
+            'url': '/',
+            'title': 'Illustration',
+        },
+        {
             'url': '/about',
             'title': 'About',
         },
         {
             'url': 'https://www.artstation.com/johnmolinero',
             'title': 'ArtStation',
-        },
-        {
-            'url': '/contact',
-            'title': 'Contact',
         },
         {
             'url': 'https://etsy.com/shop/JohnMolineroArt',
