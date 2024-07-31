@@ -6,7 +6,7 @@ class ArtView {
             description: 'No AI used for any portion.'
         },
         'john-molinero-anita.jpg': {
-            title: 'Shambler Wight',
+            title: 'Anita',
             description: 'No AI used for any portion.'
         },
         'john-molinero-burning-city.jpg': {
