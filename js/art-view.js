@@ -1,6 +1,10 @@
 class ArtView {
 
     illustration = {
+        'john-molinero-john-molinero-the-sun-in-the-darkness.jpg': {
+            title: 'Sun in the Darkness',
+            description: 'No AI used for any portion.'
+        },
         'john-molinero-anita.jpg': {
             title: 'Shambler Wight',
             description: 'No AI used for any portion.'
@@ -13,8 +17,8 @@ class ArtView {
             title: 'Half Spirit',
             description: 'No AI used for any portion.'
         },
-        'john-molinero-necrodragon_full.jpg': {
-            title: 'Necrodragon',
+        'john-molinero-john-molinero-goblin-lookout.jpg': {
+            title: 'Goblin Lookout',
             description: 'No AI used for any portion.'
         },
         'john-molinero-ranger.jpg': {
