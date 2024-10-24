@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>John Molinero</title>
+    <meta name="description" content="John Molinero's Portfolio" />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/nav.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/images.js"></script>
+  </head>
+
+  <body>
+    <div id="container">
+      <aside id="info">
+        <div id="name">
+          <a href="/"><h1>John Molinero</h1></a>
+        </div>
+        <nav id="pages"></nav>
+      </aside>
+      <section>
+        <p class="page-label">Oil paitings</p>
+      </section>
+      <section id="main" class="grid-2">
+        <a class="art">
+          <img src="img/art/crops/john-molinero-old-man.jpg" alt="" />
+        </a>
+        <a class="art">
+          <img src="img/art/crops/john-molinero-handmaiden.jpg" alt="" />
+        </a>
+        <a class="art">
+          <img src="img/art/crops/john-molinero-sea-maiden.jpg" alt="" />
+        </a>
+        <a class="art">
+          <img src="img/art/crops/john-molinero-sea-man.jpg" alt="" />
+        </a>
+      </section>
+    </div>
+    <footer id="footer"></footer>
+    <script>
+      new Nav(document.getElementById('pages'));
+      new Footer(document.getElementById('footer'));
+      new Images();
+    </script>
+  </body>
+</html>

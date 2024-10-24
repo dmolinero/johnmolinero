@@ -1,96 +1,109 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Poppins:wght@400;500;700&display=swap');
 
 body {
-	font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', sans-serif;
 }
 
 h1 {
-	font-family: "Poppins", serif;
-	font-weight: 700;
-	text-transform: uppercase;
-	line-height: 1.12;
-	margin: 48px 0 24px 0;
+  font-family: 'Poppins', serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.12;
+  margin: 48px 0 24px 0;
 }
 
 h2 {
-	font-family: "Poppins", serif;
-	font-size: 20px;
-	font-weight: 400;
-	color: #555;
-	line-height: 1.12;
-	margin: 48px 0 24px 0;
+  font-family: 'Poppins', serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #555;
+  line-height: 1.12;
+  margin: 48px 0 24px 0;
 }
 
 #container {
-	padding: 0 16px;
-	width: 100%;
-	max-width: 1200px;
-	margin: 0 auto;
-	text-align: center;
-	flex: 1 0 auto;
-	min-height: calc(100vh - 80px);
+  padding: 0 16px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  flex: 1 0 auto;
+  min-height: calc(100vh - 80px);
 }
 
 #footer {
-	flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 nav {
-	margin: 24px 0;
+  margin: 24px 0;
 }
 
 nav a {
-	padding: 8px;
-	text-transform: uppercase;
+  padding: 8px;
+  text-transform: uppercase;
 }
 
 #main.grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	gap: 16px;
-	padding-bottom: 48px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  padding-bottom: 48px;
+}
+
+#main.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding-bottom: 48px;
 }
 
 @media (max-width: 768px) {
-	#main {
-		grid-template-columns: 1fr 1fr;
-	}
+  #main {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 #main .art {
-	display: inline-block;
+  display: inline-block;
 }
 
 #main .art img {
-	aspect-ratio: 1/1;
-	width: 100%;
-	object-fit: cover;
+  aspect-ratio: 1/1;
+  width: 100%;
+  object-fit: cover;
 }
 
 #art-view {
-	padding: 0 0 24px 0;
+  padding: 0 0 24px 0;
 }
 
 #art-view p {
-	margin: 24px 0;
-	font-size: 16px;
+  margin: 24px 0;
+  font-size: 16px;
 }
 
 figure.art {
 }
 
 footer {
-	background-color: #f2f2f2;
-	padding: 24px 0;
-	text-align: center;
+  background-color: #f2f2f2;
+  padding: 24px 0;
+  text-align: center;
 }
 
 footer a {
-	margin: 16px 8px;
-	display: inline-block;
+  margin: 16px 8px;
+  display: inline-block;
 }
 
 footer a img {
-	width: 32px;
-	height: 32px;
+  width: 32px;
+  height: 32px;
+}
+
+.page-label {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 48px 0 24px 0;
 }
