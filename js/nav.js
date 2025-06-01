@@ -6,7 +6,7 @@ class Nav {
     },
     {
       url: '/fine-art',
-      title: 'Fine Art',
+      title: 'Oil',
     },
     {
       url: '/about',
@@ -16,10 +16,10 @@ class Nav {
       url: 'https://www.artstation.com/johnmolinero',
       title: 'ArtStation',
     },
-    {
-      url: 'https://etsy.com/shop/JohnMolineroArt',
-      title: 'Store',
-    },
+    // {
+    //   url: 'https://etsy.com/shop/JohnMolineroArt',
+    //   title: 'Store',
+    // },
   ];
 
   constructor(host) {
