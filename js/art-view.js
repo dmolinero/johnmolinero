@@ -36,10 +36,6 @@ class ArtView {
       title: 'Torchlight',
       description: 'No AI used for any portion.',
     },
-    'john-molinero-handmaiden.jpg': {
-      title: 'Handmaiden',
-      description: 'Oil on panel',
-    },
     'john-molinero-old-man.jpg': {
       title: 'Old Man',
       description: 'Oil on panel',
@@ -55,6 +51,18 @@ class ArtView {
     'john-molinero-angel.jpg': {
       title: 'Angel',
       description: 'No AI used for any portion.',
+    },
+    'john-molinero-oil.jpg': {
+      title: 'Untitled portrait',
+      description: 'Oil on panel',
+    },
+    'john-molinero-ghost-vale.jpg': {
+      title: 'Untitled portrait',
+      description: 'Oil on panel',
+    },
+    'john-molinero-vamp-swords.jpg': {
+      title: 'Untitled portrait',
+      description: 'Oil on panel',
     },
   };
 
